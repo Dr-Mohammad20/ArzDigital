@@ -1,0 +1,47 @@
+.paginationNav{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paginationUL{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.paginationLI{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3CA6B9;
+  border-radius: 10px;
+  text-align: center;
+}
+.paginationLF{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #3CA6B9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.paginationLI a , .paginationLF a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.paginationLI a:focus{
+background-color: #5dcadd;
+border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+.Container{
+  width: 98%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #eff8fa;
+  border-radius: 15px;
+}
+.CoinImage{
+  width: 20%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coinLogo{
+  width: 90%;
+}
+.CoinInfo{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Description{
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.CoinInfo a{
+  text-decoration: none;
+  color: #3CA6B9;
+}
