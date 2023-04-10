@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import style from "../asset/Styles/Home.module.css";
-import { getCoins } from "../services/Api";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import style from '../asset/Styles/Home.module.css';
+import { getCoins } from '../services/Api';
+import { Link } from 'react-router-dom';
 
 // component
-import Pagination from "./Pagination";
-import Loader from "../shared/Loader";
+import Pagination from './Pagination';
+import Loader from '../shared/Loader';
 
 const Home = () => {
   const [coins, setCoins] = useState([]);
@@ -55,7 +55,7 @@ const Home = () => {
                   className={style.Coins}
                   key={item.id}
                   onClick={() => clickHandler(item)}>
-                  <div style={{ width: "5%" }}>
+                  <div style={{ width: '5%' }}>
                     <p>
                       {index + 1 + (currentPage * postsPerPage - postsPerPage)}
                     </p>
@@ -67,7 +67,7 @@ const Home = () => {
                       alt="CoinImage"
                     />
                   </div>
-                  <div style={{ color: "orange" }}>
+                  <div style={{ color: 'orange' }}>
                     <p>{item.name}</p>
                   </div>
                   <div>
@@ -80,8 +80,8 @@ const Home = () => {
                     <p
                       style={
                         item.price_change_percentage_24h > 0
-                          ? { color: "green" }
-                          : { color: "red" }
+                          ? { color: 'green' }
+                          : { color: 'red' }
                       }>
                       {item.price_change_percentage_24h}
                     </p>
@@ -103,10 +103,10 @@ const Home = () => {
         ) : (
           <div
             style={{
-              height: "95vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              height: '95dvh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}>
             <Loader />
           </div>
@@ -122,7 +122,7 @@ const Home = () => {
           />
         </div>
         <div className={style.SelectCoinInfo}>
-          <p style={{ color: "orange" }}>Name : {selectedCoins.name}</p>
+          <p style={{ color: 'orange' }}>Name : {selectedCoins.name}</p>
           <p>Symbol : {selectedCoins.symbol}</p>
           <p>Low Price In 24h: {selectedCoins.low_24h} $</p>
           <p>High Price In 24h: {selectedCoins.high_24h} $</p>
@@ -130,11 +130,11 @@ const Home = () => {
           <p
             style={
               selectedCoins.price_change_percentage_24h > 0
-                ? { color: "green" }
-                : { color: "red" }
+                ? { color: 'green' }
+                : { color: 'red' }
             }>
-            <span style={{ color: "black" }}>
-              Price Change Percentage In 24h :{" "}
+            <span style={{ color: 'black' }}>
+              Price Change Percentage In 24h :{' '}
             </span>
             {selectedCoins.price_change_percentage_24h}
           </p>
