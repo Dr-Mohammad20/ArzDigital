@@ -1,3 +1,5 @@
+پروژه ارز دیجیتال یک پروژه نوشته شده با ری اکت می باشد
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
