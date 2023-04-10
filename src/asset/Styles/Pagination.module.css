@@ -1,37 +1,39 @@
-.paginationNav{
+.paginationNav {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
-.paginationUL{
+.paginationUL {
   display: flex;
   gap: 25px;
   align-items: center;
   justify-content: space-between;
 }
-.paginationLI{
+.paginationLI {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: 1px solid #3CA6B9;
+  border: 1px solid #3ca6b9;
   border-radius: 10px;
   text-align: center;
 }
-.paginationLF{
+.paginationLF {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
   height: 30px;
-  border: 1px solid #3CA6B9;
+  border: 1px solid #3ca6b9;
   border-radius: 10px;
   text-align: center;
 }
 
-.paginationLI a , .paginationLF a{
+.paginationLI a,
+.paginationLF a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -41,7 +43,27 @@
   color: black;
 }
 
-.paginationLI a:focus{
-background-color: #5dcadd;
-border-radius: 10px;
+.paginationLI a:focus {
+  background-color: #5dcadd;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .paginationNav {
+    width: 100%;
+  }
+  .paginationUL {
+    width: 100%;
+    gap: 2px;
+    justify-content: center;
+    margin-left: -40px;
+  }
+  .paginationLI {
+    width: 25px;
+    height: 25px;
+  }
+  .paginationLF {
+    width: 80px;
+    height: 25px;
+  }
 }
