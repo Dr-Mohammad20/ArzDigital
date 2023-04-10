@@ -1,16 +1,20 @@
 * {
   box-sizing: border-box;
 }
+@media screen and (min-width: 1024px) {
+}
+
 .Container {
   width: 100%;
-  height: 95vh;
+  height: 99dvh;
   display: flex;
   justify-content: center;
   gap: 5px;
-  padding: 5px;
+  padding: 1dvh;
 }
 .LeftContent {
   flex: 75;
+  min-height: 100%;
   height: fit-content;
   background-color: #eff8fa;
   border-radius: 15px;
@@ -37,7 +41,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 10px;
-  height: 55px;
+  height: 75px;
   width: 98%;
   background-color: #fff;
   border-radius: 15px;
@@ -66,7 +70,8 @@
 }
 .RightContent {
   flex: 25;
-  height: 95vh;
+  min-height: 95dvh;
+  height: fit-content;
   border-radius: 15px;
   background-color: #fff;
   display: flex;
@@ -75,7 +80,7 @@
   align-items: flex-start;
   gap: 5px;
   padding: 5px;
-  margin-top: 3vh;
+  margin-top: 1dvh;
 }
 
 .SelectCoinLogo {
@@ -100,4 +105,40 @@
 .coinImage {
   width: 85%;
   height: 85%;
+}
+
+@media screen and (max-width: 1024px) {
+  .Container {
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 1dvh;
+  }
+  .LeftContent {
+    width: 100%;
+  }
+  .APIInfo {
+    padding: 5px;
+  }
+  .RightContent {
+    width: 100%;
+    min-height: 15dvh;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2%;
+  }
+  .SelectCoinLogo {
+    height: 20dvh;
+    width: 15%;
+  }
+  .SelectCoinInfo {
+    height: 20vh;
+    width: 85%;
+    flex-direction: row-reverse;
+    gap: 2%;
+    text-align: center;
+    line-height: 25px;
+  }
 }
