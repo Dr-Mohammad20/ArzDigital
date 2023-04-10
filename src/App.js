@@ -1,16 +1,16 @@
-import React from "react";
-import "./App.css";
-import { Routes, Route, Navigate, Link } from "react-router-dom";
+import React from 'react';
+import './App.css';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
 
 //components
-import Home from "./components/HomePage";
-import NotFound from "./components/NotFound";
-import GreenCoins from "./components/GreenCoins";
-import RedCoins from "./components/RedCoins";
-import ShowCoin from "./components/ShowCoin";
+import Home from './components/HomePage';
+import NotFound from './components/NotFound';
+import GreenCoins from './components/GreenCoins';
+import RedCoins from './components/RedCoins';
+import ShowCoin from './components/ShowCoin';
 
 //Logo
-import logo2 from "./asset/Icon/logo2.png";
+import logo2 from './asset/Icon/logo2.png';
 
 function App() {
   return (
